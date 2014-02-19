@@ -12,9 +12,6 @@ from sys import version_info
 
 from setuptools import setup, find_packages
 
-from flask_collect import __version__, __license__
-
-
 def read(fname):
     try:
         return open(path.join(path.dirname(__file__), fname)).read()
@@ -32,8 +29,8 @@ if version_info < (2, 7):
 
 META_DATA = dict(
     name='Flask-Collect',
-    version=__version__,
-    license=__license__,
+    version='0.2.2',
+    license="BSD",
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
     platforms=('Any'),
